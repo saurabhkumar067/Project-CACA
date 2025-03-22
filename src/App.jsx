@@ -23,38 +23,36 @@ function App() {
         },
         {
           path: "/aboutus",
-          element: <About/>,
+          element: <About />,
         },
         {
-          path:"/aboutus/overview",
-          element:<About/>
-
+          path: "/aboutus/overview",
+          element: <About />,
         },
         {
-          path:"/aboutus/team",
-          element:<Team/>
-
+          path: "/aboutus/team",
+          element: <Team />,
         },
         {
           path: "/projectcaca",
-          element: <ProjectCaca/>,
+          element: <ProjectCaca />,
         },
         {
           path: "/instruments",
           element: <Instruments />,
         },
         {
-          path:"/instruments/school-child-protection-policy",
-          element:<SchoolChildProtectionPolicy/>
+          path: "/instruments/school-child-protection-policy",
+          element: <SchoolChildProtectionPolicy />,
         },
         {
           path: "/resources",
           element: <Resources />,
         },
         {
-          path:"/contribute-intership",
-          element:<ContributeIntership/>
-        }
+          path: "/contribute-internship",
+          element: <ContributeIntership />,
+        },
       ],
     },
   ]);
