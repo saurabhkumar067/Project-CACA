@@ -6,10 +6,15 @@ import About from "./pages/About";
 import ProjectCaca from "./pages/ProjectCaca";
 import ContributeIntership from "./pages/ContributeIntership";
 import Instruments from "./pages/Instruments";
-import Resources from "./pages/Resources";
 import Overview from "./pages/aboutSection/Overview";
 import SchoolChildProtectionPolicy from "./pages/instrumentsSection/SchoolChildProtectionPolicy";
 import Team from "./pages/aboutSection/Team";
+import Resources from "./pages/ResourcesSection/Resources";
+import ChildrenPicturebooks from "./pages/ResourcesSection/ChildrenPicturebooks";
+import CharacterCanvas from "./pages/ResourcesSection/CharacterCanvas";
+import SupplementaryWorksheets from "./pages/ResourcesSection/SupplementaryWorksheets";
+import TeachersManual from "./pages/ResourcesSection/TeachersManual";
+import ParentTeacherBooklets from "./pages/ResourcesSection/ParentTeacherBooklets";
 
 function App() {
   const router = createBrowserRouter([
@@ -47,7 +52,27 @@ function App() {
         },
         {
           path: "/resources",
-          element: <Resources />,
+          element: <Resources/>,
+        },
+        {
+          path:"/resources/children-picture-books",
+          element:<ChildrenPicturebooks/>
+        },
+        {
+          path:"/resources/character-canvas",
+          element:<CharacterCanvas/>
+        },
+        {
+          path:"/resources/supplementary-worksheets",
+          element:<SupplementaryWorksheets/>
+        },
+        {
+          path:"/resources/parent–teacher-booklets", ////
+          element:<ParentTeacherBooklets/>
+        },
+        {
+          path:"/resources/teacher’s-manual",
+          element:<TeachersManual/>
         },
         {
           path: "/contribute-internship",

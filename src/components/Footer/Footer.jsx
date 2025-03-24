@@ -9,7 +9,7 @@ import { FaGooglePlusSquare } from "react-icons/fa";
 function Footer() {
   return (
     <footer>
-      <div className="pt-4 pb-7 bg-[#F5F6FD] flex justify-center items-center flex-col gap-3">
+      <div className="pt-4 pb-7 mt-14 bg-[#F5F6FD] flex justify-center items-center flex-col gap-3">
         <div className="logo">
           <img
             src="https://projectcaca.org/wp-content/uploads/2021/06/New-logo-project-caca-Cop.png"
