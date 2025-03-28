@@ -15,6 +15,10 @@ import CharacterCanvas from "./pages/ResourcesSection/CharacterCanvas";
 import SupplementaryWorksheets from "./pages/ResourcesSection/SupplementaryWorksheets";
 import TeachersManual from "./pages/ResourcesSection/TeachersManual";
 import ParentTeacherBooklets from "./pages/ResourcesSection/ParentTeacherBooklets";
+import SupportStaffbooklets from "./pages/ResourcesSection/SupportStaffbooklets";
+import Posters from "./pages/ResourcesSection/Posters";
+import Video from "./pages/ResourcesSection/Video";
+import Audios from "./pages/ResourcesSection/Audios";
 
 function App() {
   const router = createBrowserRouter([
@@ -67,12 +71,28 @@ function App() {
           element:<SupplementaryWorksheets/>
         },
         {
-          path:"/resources/parent–teacher-booklets", ////
+          path:"/resources/teacher’s-manual",
+          element:<TeachersManual/>
+        },
+        {
+          path:"/resources/parent-–-teacher-booklets",
           element:<ParentTeacherBooklets/>
         },
         {
-          path:"/resources/teacher’s-manual",
-          element:<TeachersManual/>
+          path:"/resources/support-–-staff-booklets",
+          element:<SupportStaffbooklets/>,
+        },
+        {
+          path:"/resources/posters",
+          element:<Posters/>
+        },
+        {
+          path:"/resources/videos",
+          element:<Video/>
+        },
+        {
+          path:"/resources/audios",
+          element:<Audios/>
         },
         {
           path: "/contribute-internship",
