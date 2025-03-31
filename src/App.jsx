@@ -19,6 +19,7 @@ import SupportStaffbooklets from "./pages/ResourcesSection/SupportStaffbooklets"
 import Posters from "./pages/ResourcesSection/Posters";
 import Video from "./pages/ResourcesSection/Video";
 import Audios from "./pages/ResourcesSection/Audios";
+import ChildrenSafetyWorkbooks from "./pages/instrumentsSection/ChildrenSafetyWorkbooks";
 
 function App() {
   const router = createBrowserRouter([
@@ -49,6 +50,10 @@ function App() {
         {
           path: "/instruments",
           element: <Instruments />,
+        },
+        {
+          path: "/instruments/children-safety-workbooks",
+          element:<ChildrenSafetyWorkbooks/>
         },
         {
           path: "/instruments/school-child-protection-policy",
