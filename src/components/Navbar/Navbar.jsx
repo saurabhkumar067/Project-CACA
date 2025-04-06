@@ -6,9 +6,12 @@ import { FaSquareInstagram } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
 import { FaGooglePlusG } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import { HiOutlineBars3CenterLeft } from "react-icons/hi2";
+import { RxCross2 } from "react-icons/rx";
 
 function Navbar() {
   const [dropdown, setDropdown] = useState(null);
+  const [toggle, setToggle] = useState(false)
 
   const handleMouseEnter = (menu) => {
     setDropdown(menu);
@@ -74,10 +77,20 @@ function Navbar() {
     { name: "Contribute/Internship", path: "/contribute-internship" },
   ];
 
+  const handleNavbar = ()=>{
+    if(toggle){
+      setToggle(false)
+    }else{
+      setToggle(true)
+    }
+
+    console.log("clicked");
+    
+  }
   return (
     <div>
-      <header className="bg-[#4A4747] flex justify-between items-center px-28 py-2 text-white md:px-10 xl:px-24 2xl:px-28">
-        <ul className="flex gap-3 xl:text-base md:text-xs">
+      <header className="bg-[#4A4747] flex justify-between items-center px-28 py-2 text-white md:px-10 xl:px-24 2xl:px-28 min-[320px]:hidden">
+        <ul className="flex gap-3 xl:text-base md:text-xs ">
           <li>
             <FaFacebookF />
           </li>
@@ -109,15 +122,24 @@ function Navbar() {
           </a>
         </div>
       </header>
-      <nav className="flex justify-between items-center px-28 pt-2 md:px-8 xl:px-20 2xl:px-28">
+    
+      <nav className="flex justify-between items-center px-28 pt-2 md:px-8 xl:px-20 2xl:px-28 min-[320px]:px-0">
+
+        {/* <div className="flex justify-between border-2 w-full items-center "> */}
         <div className="logo">
           <img
             src="https://projectcaca.org/wp-content/uploads/2021/06/New-logo-project-caca-Cop.png"
             alt="Project CACA"
-            className="w-[70%] md:w-[50%] xl:w-[75%]"
+            className="w-[70%] md:w-[50%] xl:w-[75%] min-[320px]:w-[45%]"
           />
         </div>
-        <ul className="flex justify-between items-center gap-8 text-[#6a6a6a] ubuntu-light xl:text-base md:text-xs md:gap-4 xl:gap-6 2xl:gap-8 2xl:text-lg">
+      <div onClick={handleNavbar} className="cursor-pointer text-2xl ">
+          {toggle?<RxCross2/>:<HiOutlineBars3CenterLeft/>}
+      </div>
+        
+        {/* </div> */}
+
+        <ul className={`flex justify-between items-center gap-8 text-[#6a6a6a] ubuntu-light xl:text-base md:text-xs md:gap-4 xl:gap-6 2xl:gap-8 2xl:text-lg ${toggle?"flex":"hidden"} `}>
           {navItems.map((item) => (
             <div
               key={item.name}
@@ -165,3 +187,17 @@ function Navbar() {
 }
 
 export default Navbar;
+
+{/*
+      display: block;
+    position: absolute;
+    top: 40%;
+    z-index: 100;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    height: 62%;
+    width: 100%;
+    align-items: center;
+    padding: 10px 15px;
+    */}

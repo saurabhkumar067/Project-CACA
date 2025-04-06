@@ -37,7 +37,7 @@ function HomePageBanner() {
     }, [currentIndex]);
   
   return (
-    <div className="relative w-full h-[80vh] overflow-hidden">
+    <div className="relative w-full h-[80vh] overflow-hidden min-[320px]:h-[35vh]">
         <div
           className="flex transition-transform duration-1000 h-full ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -47,7 +47,7 @@ function HomePageBanner() {
               key={index}
               src={item}
               alt={`slider-${index}`}
-              className="w-full h-auto flex-shrink-0"
+              className="w-full h-auto flex-shrink-0 "
             />
           ))}
         </div>
