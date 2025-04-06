@@ -1,7 +1,7 @@
 import React from "react";
-import AboutBanner from "../assets/aboutus.jpg";
-import AboutImage1 from "../assets/aboutus1.jpg";
-import AboutImage2 from "../assets/aboutus2.jpg";
+import AboutBanner from "../../assets/aboutus.jpg";
+import AboutImage1 from "../../assets/aboutus1.jpg";
+import AboutImage2 from "../../assets/aboutus2.jpg";
 
 function About() {
   return (

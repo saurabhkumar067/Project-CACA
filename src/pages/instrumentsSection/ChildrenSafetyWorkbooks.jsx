@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ChildrenPicturebooksBanner from "../../assets/ChildrenPicturebooksBanner.jpg";
+import ChildrenSafetyWorkbooksBanner from "../../assets/ChildrenSafetyWorkbooksBanner.jpg";
 
 function ChildrenSafetyWorkbooks() {
   const [safetyWorkbooks, setSafetyWorkbooks] = useState([
@@ -97,7 +97,7 @@ function ChildrenSafetyWorkbooks() {
       id: 11,
       class: "Class 10",
       edition: "(It’s On the Way)",
-      image: "/images/class9-safety.jpg",
+      image: "https://projectcaca.org/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-08-at-2.31.23-PM.jpeg",
     },
   ]);
 
@@ -105,7 +105,7 @@ function ChildrenSafetyWorkbooks() {
     <div>
       <div>
         <img
-          src={ChildrenPicturebooksBanner}
+          src={ChildrenSafetyWorkbooksBanner}
           alt="ChildrenPicturebooks"
           className="w-full h-full"
         />
@@ -148,41 +148,26 @@ function ChildrenSafetyWorkbooks() {
             Resources
           </h2>
           <h3 className="text-center text-2xl outfit mt-1 mb-4">
-            Children Picture Books (From Classes{" "}
-            <span className="font-semibold">(UKG To 2)</span>)
+          Children Safety Workbooks <span className="font-semibold">(UKG To 9)</span>)
           </h3>
           <p className="quicksand text-center">
-            Children’s picture books help its young readers to connect with the
-            main characters of the workbooks. The idea is to make young readers
-            comfortable when it comes to sharing their personal feelings and
-            incidents through the various activities of the workbooks. The QR
-            codes for the picture books are embedded in the workbooks.
+          To implement Project CACA in your school, kindly fill and submit the <a href="" className="hover:underline text-red-600 font-semibold">Implementation Form.</a> Here is the link for the <a href="" className="hover:underline text-red-600 font-semibold">Teacher’s Manual (Pink Book)</a> and <a href="" className="hover:underline text-red-600 font-semibold">Template</a> for lesson plan development. Besides, here is a write-up for a <a href="" className="hover:underline text-red-600 font-semibold">parent’s circular</a> about the school’s initiative to implement Project CACA. 
           </p>
-          <h4 className="font-semibold text-lg mt-10">Dear Children!</h4>
-          <p className="quicksand">
-            Sana, Arpit and Pokso will be your companions as you journey through
-            your safety workbooks. The three musketeers are childhood friends,
-            and enjoy learning skills. Sometimes, they come across situations
-            when they are not sure what to do. At times, they talk to their
-            friends, parents, grandparents and teachers, but their favourite
-            advisor is their tiger friend, Pokso. He always helps them to be
-            happy, healthy and safe. But you’re in this story too, because the
-            three friends might need your help with some of their problems.
-            Enjoy their antics and those of their friends and classmates as you
-            make your very own journey to becoming an adult. Be safe!
-          </p>
+         
           <div className="grid grid-cols-3 mt-14 gap-y-20">
             {safetyWorkbooks.map((safetybook, index) => {
               return (
-                <div className="card cursor-pointer text-center hover:scale-105 duration-500">
+                <div className="card cursor-pointer text-center ">
                   <div className="mb-4">
                     <img
                       src={safetybook.image}
                       alt={safetybook.title}
-                      className="mx-auto w-[200px] h-[290px] object-cover"
+                      className="mx-auto w-[200px] h-[290px] object-cover hover:scale-105 duration-500"
                     />
                   </div>
-                  <a href="" className="text-red-600 hover:underline text-base">
+                  <h5>{safetybook.class}</h5>
+                  <p>Price Rs. {safetybook.price}/-({safetybook.edition})</p>
+                  <a href="" className="text-red-600 hover:underline text-sm">
                     {safetybook.title}
                   </a>
                 </div>
@@ -190,6 +175,9 @@ function ChildrenSafetyWorkbooks() {
             })}
           </div>
         </div>
+      </div>
+      <div className="text-center w-1/2 mx-auto mt-10">
+      Instructional Video on how to open and read My Ninth Safety Workbook in {["English", "Hindi", "Bengali", "Gujarati", "Kannada", "Malayalam", "Marathi", "Tamil", "Telugu"].map((city,index)=> <a key={index} href="" className="mx-1 text-blue-800 hover:underline">{city},</a>)}
       </div>
     </div>
   );

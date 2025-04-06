@@ -50,7 +50,6 @@ function Navbar() {
         "Children Safety Workbooks",
         "Training/Webinar",
         "Assessment for Challenges",
-        "School Safety Policy",
         "School Child Protection Policy",
         "Research/Surveys",
         "Litigation & Psychosocial Support",
