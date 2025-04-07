@@ -7,10 +7,10 @@ function About() {
   return (
     <div className="">
       <div>
-        <img src={AboutBanner} alt="" />
+        <img src={AboutBanner} alt="" className="min-[320px]:mt-3 min-[425px]:mt-0  " />
       </div>
 
-      <div className="w-[80%] overflow-hidden mx-auto">
+      <div className="w-[80%] overflow-hidden mx-auto min-[320px]:w-[95%] min-[425px]:w-[80%] md:w-[90%] xl:w-[80%]">
         <div
           className="flex gap-16 animate-scroll  justify-center items-center"
           style={{
@@ -48,21 +48,21 @@ function About() {
   `}
       </style>
 
-      <div className="flex px-40  mt-10">
-        <div className="w-[70%] border-r mr-5 pr-5">
+      <div className="flex px-40  mt-10 min-[320px]:px-4 min-[320px]:block min-[425px]:px-10 lg:flex xl:px-40">
+        <div className="w-[70%] border-r mr-5 pr-5 min-[320px]:border-none min-[320px]:w-full xl:w-[70%]">
           <div>
             <h3 className="text-3xl font-semibold text-gray-600">
               About Us - Overview
             </h3>
             <img src={AboutImage1} alt="" className="mx-auto mt-8 mb-4" />
-            <p className="text-lg quicksand">
+            <p className="text-lg quicksand min-[320px]:text-base lg:text-lg">
               Social Axiom Foundation – SAF is a non-profit organisation
               registered in India under Section 25 of the Companies Act, 1956.
               Corporate identity number is U85300DL2018NPL330830. Donations to
               SAF are tax deductible under 12A / 80G of the Income Tax Act.
             </p>
             <p className="my-4 quicksand text-lg">Our main objectives are:</p>
-            <ul className="text-base quicksand list-decimal ml-10">
+            <ul className="text-base quicksand list-decimal ml-10 min-[320px]:ml-4 min-[320px]:text-sm lg:text-base md:ml-10">
               <li>
                 To initiate, carry out, execute, implement, aid, advocate, and
                 assist activities towards the improvements and protection of
@@ -94,14 +94,14 @@ function About() {
                 gender equality.
               </li>
             </ul>
-            <p className="my-4 text-center border-b pb-5 border-gray-400 italic">
+            <p className="my-4 text-center border-b pb-5 border-gray-400 italic ">
               “One can spend a lifetime trying to forget a few moments of one’s
               childhood.”
             </p>
           </div>
           <div>
             <img src={AboutImage2} alt="" className="mx-auto mt-5 mb-2" />
-            <p className="my-4 quicksand text-lg">
+            <p className="my-4 quicksand text-lg min-[320px]:text-sm lg:text-lg">
               We have made a foray against one of the biggest threats facing our
               society, i.e., Child Sexual Abuse with our initiative, i.e.,
               Project Children Against Child Abuse or simply Project CACA. The
@@ -121,7 +121,7 @@ function About() {
           </div>
         </div>
 
-        <div className="w-[30%]">
+        <div className="w-[30%] min-[320px]:w-full lg:w-[40%] xl:w-[30%]">
           <h3 className="text-3xl font-semibold text-gray-600">About Us</h3>
           <ul className="text-xl list-disc ml-8 text-blue-700 flex flex-col gap-4 mt-6 font-[300]">
             <li className="hover:underline cursor-pointer">Overview</li>

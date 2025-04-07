@@ -89,7 +89,7 @@ function Navbar() {
   }
   return (
     <div>
-      <header className="bg-[#4A4747] flex justify-between items-center px-28 py-2 text-white md:px-10 xl:px-24 2xl:px-28 min-[320px]:hidden">
+      <header className="bg-[#4A4747] flex justify-between items-center px-28 py-2 text-white md:px-10 xl:px-24 2xl:px-28 min-[320px]:hidden md:flex">
         <ul className="flex gap-3 xl:text-base md:text-xs ">
           <li>
             <FaFacebookF />
@@ -123,23 +123,23 @@ function Navbar() {
         </div>
       </header>
     
-      <nav className="flex justify-between items-center px-28 pt-2 md:px-8 xl:px-20 2xl:px-28 min-[320px]:px-0">
+      <nav className="flex justify-between items-center px-28 pt-2 md:px-8 xl:px-20 2xl:px-28 min-[320px]:px-2 min-[375px]:px-4 min-[425px]:py-3">
 
         {/* <div className="flex justify-between border-2 w-full items-center "> */}
         <div className="logo">
           <img
             src="https://projectcaca.org/wp-content/uploads/2021/06/New-logo-project-caca-Cop.png"
             alt="Project CACA"
-            className="w-[70%] md:w-[50%] xl:w-[75%] min-[320px]:w-[45%]"
+            className="w-[70%] md:w-[50%] xl:w-[75%] min-[320px]:w-[45%] sm:w-[60%]"
           />
         </div>
-      <div onClick={handleNavbar} className="cursor-pointer text-2xl ">
+      <div onClick={handleNavbar} className="cursor-pointer text-2xl md:hidden  ">
           {toggle?<RxCross2/>:<HiOutlineBars3CenterLeft/>}
       </div>
         
         {/* </div> */}
 
-        <ul className={`flex justify-between items-center gap-8 text-[#6a6a6a] ubuntu-light xl:text-base md:text-xs md:gap-4 xl:gap-6 2xl:gap-8 2xl:text-lg ${toggle?"flex":"hidden"} `}>
+        <ul className={`flex justify-between items-center gap-8 text-[#6a6a6a] ubuntu-light xl:text-base md:text-sm md:gap-4 xl:gap-6 2xl:gap-8 2xl:text-lg ${toggle?"flex":"hidden"} md:flex`}>
           {navItems.map((item) => (
             <div
               key={item.name}

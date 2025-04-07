@@ -47,28 +47,28 @@ function Directors() {
             `}
       </style>
 
-      <div className="px-20 mt-10">
+      <div className="px-20 mt-10 min-[320px]:px-4">
         <h3 className="text-3xl text-center font-semibold text-gray-600">
           About Us - Directors
         </h3>
 
-        <div className="mt-6 flex justify-between gap-20">
+        <div className="mt-6 flex justify-between gap-20 min-[320px]:block md:flex md:gap-7 xl:gap-20">
           {directorsData.map((directors, index)=>{
             return (
-              <div key={index} className="px-3 w-1/2 h-fit rounded-xl py-2 text-center mb-8 bg-gray-50 hover:bg-gray-100 duration-300">
-                <div className="w-1/2 mx-auto h-1/2">
+              <div key={index} className="px-3 w-1/2 h-fit rounded-xl py-2 text-center mb-8 bg-gray-50 hover:bg-gray-100 duration-300 min-[320px]:w-full">
+                <div className="w-1/2 mx-auto h-1/2 min-[320px]:w-full xl:w-1/2">
 
               <img
                 src={directors.img}
                 alt={directors.name}
-                className="rounded-xl w-full h-full object-contain"
+                className="rounded-xl w-full h-full object-contain min-[320px]:w-1/2 min-[320px]:mx-auto xl:w-full xl:h-full"
               />
                 </div>
 
               
                 <h3 className="text-xl font-semibold mt-5 mb-3">{directors.name}</h3>
                 
-                <p className="text-sm quicksand">
+                <p className="text-sm quicksand min-[320px]:text-xs xl:text-sm">
                   {directors.disc}
                 </p>
               

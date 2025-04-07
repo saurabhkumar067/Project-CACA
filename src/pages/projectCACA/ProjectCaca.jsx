@@ -4,7 +4,7 @@ import ProjectCacaBanner from "../../assets/ProjectCacaBanner.jpg"
 function ProjectCaca() {
   return (
     <div className="overflow-hidden">
-      <div><img src={ProjectCacaBanner} alt="Project CACA" /></div>
+      <div className="min-[320px]:mt-4"><img src={ProjectCacaBanner} alt="Project CACA" /></div>
 
       <div
         className="flex gap-16 animate-scroll  justify-center items-center"
@@ -34,16 +34,16 @@ function ProjectCaca() {
                 `}
       </style>
 
-      <div className="px-20 mt-10">
-        <h3 className="text-3xl text-center font-semibold text-gray-600">
+      <div className="px-20 mt-10 min-[320px]:mt-6 min-[320px]:px-4 md:px-10 xl:px-20">
+        <h3 className="text-3xl text-center font-semibold text-gray-600 min-[320px]:text-lg md:text-3xl">
           Project CACA – Project Detail
         </h3>
 
         <div>
-          <h2 className="text-sm text-center text-[#3e4142] mt-3 mb-1">
+          <h2 className="text-sm text-center text-[#3e4142] mt-3 mb-1 min-[320px]:mt-2 md:text-sm md:mt-3">
             Prevention is better than cure.
           </h2>
-          <p className="text-center">
+          <p className="text-center min-[320px]:text-xs md:text-base">
             The Project is <a href="">research</a> and curriculum-based
             intervention that follows a democratic chain of processes for its
             development and implementation. The Project is committee driven with
@@ -62,7 +62,7 @@ function ProjectCaca() {
 
           <h3 className="mt-10 text-center font-bold text-xl">Salient Points</h3>
 
-          <div className="grid-cols-2 grid gap-y-4 gap-x-10  mt-4">
+          <div className="grid-cols-2 grid gap-y-4 gap-x-10  mt-4 min-[320px]:grid-cols-1 md:grid-cols-2">
             <div className="">
               <h3 className="text-xl font-semibold mb-2">Pedagogy</h3>
               <ul className="list-disc text-sm ml-7">
@@ -181,7 +181,7 @@ function ProjectCaca() {
             Institutions should not preserve the problems to which they are a
             solution.
           </h4>
-          <p className="text-center mt-2 mb-6">
+          <p className="text-center mt-2 mb-6 min-[320px]:text-xs md:text-base">
             The Project is being implemented across India in
             CBSE/CISCE/State/Foreign Board affiliated individual as well as
             group schools including Meghalaya Govt. Schools under Samagra
@@ -194,7 +194,7 @@ function ProjectCaca() {
             State/District Legal Services Authorities and more.
           </p>
 
-          <div className="grid grid-cols-2 ">
+          <div className="grid grid-cols-2 min-[320px]:grid-cols-1 md:grid-cols-2">
             <div className="">
               <h3 className="text-lg font-semibold">The Project’s 7 instruments are:</h3>
               <ul className="list-decimal ml-8 mt-3 text-sm">

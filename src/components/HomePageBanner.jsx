@@ -37,7 +37,7 @@ function HomePageBanner() {
     }, [currentIndex]);
   
   return (
-    <div className="relative w-full h-[80vh] overflow-hidden min-[320px]:h-[35vh]">
+    <div className="relative w-full h-[80vh] overflow-hidden min-[320px]:h-[35vh] sm:h-[60vh] lg:h-[80vh]">
         <div
           className="flex transition-transform duration-1000 h-full ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
