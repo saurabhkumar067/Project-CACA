@@ -91,24 +91,17 @@ function Navbar() {
     <div>
       <header className="bg-[#4A4747] flex justify-between items-center px-28 py-2 text-white md:px-10 xl:px-24 2xl:px-28 min-[320px]:hidden md:flex">
         <ul className="flex gap-3 xl:text-base md:text-xs ">
-          <li>
-            <FaFacebookF />
+          {
+            [<FaFacebookF />, <GrTwitter />, <FaLinkedin />, <FaSquareInstagram />, <FaYoutube />, <FaGooglePlusG />].map((icon,idx)=>(
+          <li className="" key={idx}>
+            <a href="#">
+            {icon}
+            </a>
           </li>
-          <li>
-            <GrTwitter />
-          </li>
-          <li>
-            <FaLinkedin />
-          </li>
-          <li>
-            <FaSquareInstagram />
-          </li>
-          <li>
-            <FaYoutube />
-          </li>
-          <li>
-            <FaGooglePlusG />
-          </li>
+
+            ))
+          }
+         
         </ul>
         <h1 className="font-semibold tracking-wide xl:text-sm md:text-xs 2xl:text-base">
           Project CACA, Since 2016
@@ -123,7 +116,7 @@ function Navbar() {
         </div>
       </header>
     
-      <nav className="flex justify-between items-center px-28 pt-2 md:px-8 xl:px-20 2xl:px-28 min-[320px]:px-2 min-[375px]:px-4 min-[425px]:py-3">
+      <nav className="flex justify-between items-center px-28 pt-2 md:px-8 xl:px-20 2xl:px-28 min-[320px]:px-2 min-[375px]:px-4 min-[425px]:py-3 bg-white min-[320px]:z-50 min-[320px]:relative min-[320px]:w-full">
 
         {/* <div className="flex justify-between border-2 w-full items-center "> */}
         <div className="logo">
@@ -139,7 +132,7 @@ function Navbar() {
         
         {/* </div> */}
 
-        <ul className={`flex justify-between items-center gap-8 text-[#6a6a6a] ubuntu-light xl:text-base md:text-sm md:gap-4 xl:gap-6 2xl:gap-8 2xl:text-lg ${toggle?"flex":"hidden"} md:flex`}>
+        <ul className={`flex justify-between items-center gap-8 text-[#6a6a6a] ubuntu-light xl:text-base md:text-sm md:gap-4 md:flex-row md:bg-[#fff] md:sticky md:h-full md:p-0 xl:gap-6 2xl:gap-8 2xl:text-lg ${toggle?"flex":"hidden"} md:flex min-[320px]:flex-col min-[320px]:fixed min-[320px]:top-0 min-[320px]:right-0 min-[320px]:h-full min-[320px]:bg-[#ffffffe0] backdrop-blur-2xl pt-[82px] pb-[168px] min-[320px]:-z-10 min-[320px]:gap-0`}>
           {navItems.map((item) => (
             <div
               key={item.name}
@@ -188,16 +181,3 @@ function Navbar() {
 
 export default Navbar;
 
-{/*
-      display: block;
-    position: absolute;
-    top: 40%;
-    z-index: 100;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
-    height: 62%;
-    width: 100%;
-    align-items: center;
-    padding: 10px 15px;
-    */}

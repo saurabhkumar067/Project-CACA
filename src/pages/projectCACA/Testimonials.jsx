@@ -104,15 +104,15 @@ function Testimonials() {
                     `}
       </style>
 
-      <div className="px-20 mt-10">
-        <h2 className="text-4xl text-center font-semibold text-red-600 border-b pb-6 mb-10">
+      <div className="px-20 mt-10 min-[320px]:px-4 sm:px-10 xl:px-20">
+        <h2 className="text-4xl text-center font-semibold text-red-600 border-b pb-6 mb-10 min-[320px]:text-xl min-[320px]:pb-5 xl:text-4xl">
           Project CACA – Testimonials
         </h2>
-        <div className="grid grid-cols-3 justify-center items-center gap-y-14 gap-x-10">
+        <div className="grid grid-cols-3 justify-center items-center gap-y-14 gap-x-10 min-[320px]:grid-cols-1 min-[320px]:gap-y-4 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-3">
           {
             testimonials.map((testimonial, index)=>{
               return (
-                <a href="" key={index} className="text-sm font-semibold text-red-600 hover:underline  hover:text-red-500">{testimonial}</a>
+                <a href="" key={index} className="text-sm font-semibold text-red-600 hover:underline  hover:text-red-500 min-[320px]:text-xs lg:text-sm">{testimonial}</a>
               )
             })
           }

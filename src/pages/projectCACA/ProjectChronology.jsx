@@ -92,37 +92,37 @@ function ProjectChronology() {
 `}
       </style>
 
-      <div className="px-40">
+      <div className="px-40 min-[320px]:px-4 sm:px-10 xl:px-40">
         <div>
-          <h2 className="text-3xl text-[#666666] text-center mt-7 font-semibold">
+          <h2 className="text-3xl text-[#666666] text-center mt-7 font-semibold min-[320px]:text-xl md:text-3xl">
             Resources
           </h2>
-          <h3 className="text-center text-3xl outfit mt-1 mb-4 text-[#666666] font-semibold">Project Chronology</h3>
-          <p className="quicksand text-center">The project has evolved through a democratic chain of events and processes like opinion polls, focus group discussions, conventions, consensus-building discussions and a pilot programme held across India. It continuously evolves under the project committee through quantitative and qualitative assessments and peer reviews.</p>
+          <h3 className="text-center text-3xl outfit mt-1 mb-4 text-[#666666] font-semibold min-[320px]:text-2xl md:text-3xl">Project Chronology</h3>
+          <p className="quicksand text-center min-[320px]:text-xs md:text-base">The project has evolved through a democratic chain of events and processes like opinion polls, focus group discussions, conventions, consensus-building discussions and a pilot programme held across India. It continuously evolves under the project committee through quantitative and qualitative assessments and peer reviews.</p>
 
           <div className="border-b-2 border-[#777777] pb-8 mb-8">
-          <h4 className="font-semibold text-lg mt-10 hover:underline text-red-600 cursor-pointer">1. Opinion Poll, July 2016</h4>
-          <p className="quicksand mt-2">An opinion poll of parents and teachers from 80+ schools of 30+cities across India on the utility of safety workbooks on CSA for school students was conducted in 2016. Refer opinion poll on page 13.</p>
-          <p className="quicksand mt-4"><span className="font-semibold text-[#666666]">Outcome:</span> The poll overwhelmingly reflected the children books as the need of the hour.</p>
+          <h4 className="font-semibold text-lg mt-10 hover:underline text-red-600 cursor-pointer min-[320px]:text-base md:text-lg">1. Opinion Poll, July 2016</h4>
+          <p className="quicksand mt-2 min-[320px]:text-xs md:text-base">An opinion poll of parents and teachers from 80+ schools of 30+cities across India on the utility of safety workbooks on CSA for school students was conducted in 2016. Refer opinion poll on page 13.</p>
+          <p className="quicksand mt-4 min-[320px]:text-xs md:text-base"><span className="font-semibold text-[#666666]">Outcome:</span> The poll overwhelmingly reflected the children books as the need of the hour.</p>
           </div>
 
           <div className="border-b-2 border-[#777777] pb-8 mb-8">
             <div>
 
-          <h4 className="text-lg text-[#666666]"><span className="font-semibold text-lg ">2. Focus group Discussion – FGD, IIT Delhi, 23rd July 2016</span> – Abuse Against Children and Ways to Combat the Issue</h4>
-          <p className="quicksand mt-2">The FGD had a participation of around 50+ attendees comprising mainly of school counsellors, special educators, academicians, lawyers and representatives of various voluntary organisations working on the issues of child abuse, law enforcement agencies like Special Police Unit for Women and Children, Delhi Police and a group of schools like Kendriya Vidyalaya Sangathan amongst others. The discussion received an overwhelming response through qualitative participation and contribution from industry, academia, voluntary organisations and other stakeholders.</p>
+          <h4 className="text-lg text-[#666666] min-[320px]:text-base  md:text-lg"><span className="font-semibold text-lg min-[320px]:text-base  md:text-lg">2. Focus group Discussion – FGD, IIT Delhi, 23rd July 2016</span> – Abuse Against Children and Ways to Combat the Issue</h4>
+          <p className="quicksand mt-2 min-[320px]:text-xs  md:text-base">The FGD had a participation of around 50+ attendees comprising mainly of school counsellors, special educators, academicians, lawyers and representatives of various voluntary organisations working on the issues of child abuse, law enforcement agencies like Special Police Unit for Women and Children, Delhi Police and a group of schools like Kendriya Vidyalaya Sangathan amongst others. The discussion received an overwhelming response through qualitative participation and contribution from industry, academia, voluntary organisations and other stakeholders.</p>
           </div>
           <div>
             <img src={FGD2} alt="" className="mt-2" />
-            <strong className="text-[#777777] mt-2 block">The key participants included –</strong>
-            <ul className="list-disc quicksand ml-7 mt-5">
+            <strong className="text-[#777777] mt-2 block min-[320px]:text-sm  md:text-base">The key participants included –</strong>
+            <ul className="list-disc quicksand ml-7 mt-5 min-[320px]:text-xs min-[320px]:mt-3  md:text-base md:mt-5">
                 {
                     keyParticipants[0].map((key, idx)=>(
                         <li key={idx} className="mb-2">{key}</li>
                     ))
                 }
             </ul>
-            <p className="quicksand mt-4"><span className="font-semibold text-[#666666]">Outcome:</span> Age-appropriate and progressive child-centric; safety workbooks based on core principles is the way forward.</p>
+            <p className="quicksand mt-4 min-[320px]:text-xs  md:text-base"><span className="font-semibold text-[#666666]">Outcome:</span> Age-appropriate and progressive child-centric; safety workbooks based on core principles is the way forward.</p>
           </div>
 
             </div>
@@ -130,20 +130,20 @@ function ProjectChronology() {
             <div className="border-b-2 border-[#777777] pb-8 mb-8">
             <div>
 
-          <h4 className="text-lg text-[#666666]"><span className="font-semibold text-lg ">3. Convention – IIT Delhi, 12th November 2016</span> – To Empower Schools Against Child Sexual Abuse</h4>
-          <p className="quicksand mt-2">Project CACA brought together various stakeholders for an open discussion at the convention which saw qualitative participation and contribution from 150+ schools, 20+ organisations, 10+ NGOs. The effectiveness of POCSO E-Box and implication of the POCSO Act on the school environment, school-related guidelines of various State Commissions for Protection of Child Rights and challenges on the implementation of various board circulars like CBSE – POCSO and self-defence circulars were part of the talks and open discussion.</p>
+          <h4 className="text-lg text-[#666666] min-[320px]:text-base  md:text-lg"><span className="font-semibold text-lg min-[320px]:text-base  md:text-lg">3. Convention – IIT Delhi, 12th November 2016</span> – To Empower Schools Against Child Sexual Abuse</h4>
+          <p className="quicksand mt-2 min-[320px]:text-xs md:text-base">Project CACA brought together various stakeholders for an open discussion at the convention which saw qualitative participation and contribution from 150+ schools, 20+ organisations, 10+ NGOs. The effectiveness of POCSO E-Box and implication of the POCSO Act on the school environment, school-related guidelines of various State Commissions for Protection of Child Rights and challenges on the implementation of various board circulars like CBSE – POCSO and self-defence circulars were part of the talks and open discussion.</p>
           </div>
           <div>
             <img src={Convention1} alt=""  className="mt-2"/>
-            <strong className="text-[#777777] mt-2 block">Key Speakers (in alphabetical order)</strong>
-            <ul className="list-disc quicksand ml-7 mt-5">
+            <strong className="text-[#777777] mt-2 block min-[320px]:text-sm  md:text-base">Key Speakers (in alphabetical order)</strong>
+            <ul className="list-disc quicksand ml-7 mt-5 min-[320px]:mt-3  md:mt-5">
                 {
                     keyParticipants[1].map((key, idx)=>(
-                        <li key={idx} className="mb-2">{key}</li>
+                        <li key={idx} className="mb-2 min-[320px]:text-xs  md:text-base">{key}</li>
                     ))
                 }
             </ul>
-            <p className="quicksand mt-4"><span className="font-semibold text-[#666666]">Outcome:</span> CACA Safety Workbooks are important life skills and value education books; however, a consensus has to be built at the grassroots level with the teachers before implementation in the school education system.</p>
+            <p className="quicksand mt-4 min-[320px]:text-xs  md:text-base"><span className="font-semibold text-[#666666]">Outcome:</span> CACA Safety Workbooks are important life skills and value education books; however, a consensus has to be built at the grassroots level with the teachers before implementation in the school education system.</p>
           </div>
 
             </div>
@@ -151,20 +151,20 @@ function ProjectChronology() {
             <div className="border-b-2 border-[#777777] pb-8 mb-8">
             <div>
 
-          <h4 className="text-lg text-[#666666]"><span className="font-semibold text-lg ">4. Consensus Building Discussions</span> – CBD, December 2016 onward</h4>
-          <p className="quicksand mt-2">CBD is a continuous process. It is achieved through workshops (real and virtual). It is held with teachers and principals on the utility, challenges and implementation of Project CACA. Till date, more than 1,000 schools have participated in it. The discussions are held at various host institutions where other schools are also invited. Some of the CBD hosts are (in alphabetical order):</p>
+          <h4 className="text-lg text-[#666666] min-[320px]:text-base  md:text-lg"><span className="font-semibold text-lg min-[320px]:text-base  md:text-lg">4. Consensus Building Discussions</span> – CBD, December 2016 onward</h4>
+          <p className="quicksand mt-2 min-[320px]:text-xs  md:text-base">CBD is a continuous process. It is achieved through workshops (real and virtual). It is held with teachers and principals on the utility, challenges and implementation of Project CACA. Till date, more than 1,000 schools have participated in it. The discussions are held at various host institutions where other schools are also invited. Some of the CBD hosts are (in alphabetical order):</p>
           </div>
           <div>
             <img src={CBD2} alt=""  className="mt-2"/>
-            <strong className="text-[#777777] mt-2 block">Key Speakers (in alphabetical order)</strong>
-            <ul className="list-disc quicksand ml-7 mt-5">
+            <strong className="text-[#777777] mt-2 block min-[320px]:text-sm  md:text-base">Key Speakers (in alphabetical order)</strong>
+            <ul className="list-disc quicksand ml-7 mt-5 min-[320px]:mt-3 md:mt-5">
                 {
                     keyParticipants[2].map((key, idx)=>(
-                        <li key={idx} className="mb-2">{key}</li>
+                        <li key={idx} className="mb-2 min-[320px]:text-xs  md:text-base">{key}</li>
                     ))
                 }
             </ul>
-            <p className="quicksand mt-4"><span className="font-semibold text-[#666666]">Outcome:</span> The first consensus led us to the pilot programme, and since then, the continuum helps in advocacy and shaping of the project.</p>
+            <p className="quicksand mt-4 min-[320px]:text-xs  md:text-base"><span className="font-semibold text-[#666666]">Outcome:</span> The first consensus led us to the pilot programme, and since then, the continuum helps in advocacy and shaping of the project.</p>
           </div>
 
             </div>
@@ -172,15 +172,15 @@ function ProjectChronology() {
             <div className="border-b-2 border-[#777777] pb-8 mb-8">
            
 
-          <h4 className="text-lg text-[#666666] font-semibold">5. Pilot programme, 2017-18</h4>
-          <p className="quicksand mt-2">A pilot programme was run in 15 districts, across 20 schools covering 21,000+ students, their parents, teachers and non-teaching staff.</p>
+          <h4 className="text-lg text-[#666666] font-semibold min-[320px]:text-base  md:text-lg">5. Pilot programme, 2017-18</h4>
+          <p className="quicksand mt-2 min-[320px]:text-xs  md:text-base">A pilot programme was run in 15 districts, across 20 schools covering 21,000+ students, their parents, teachers and non-teaching staff.</p>
           
          
-            <p className="quicksand mt-4"><span className="font-semibold text-[#666666]">Outcome:</span> The pilot reconfirmed the opinion poll result that CACA Safety Workbooks are effective tools for all the stakeholders involved and are the way forward.</p>
+            <p className="quicksand mt-4 min-[320px]:text-xs  md:text-base"><span className="font-semibold text-[#666666]">Outcome:</span> The pilot reconfirmed the opinion poll result that CACA Safety Workbooks are effective tools for all the stakeholders involved and are the way forward.</p>
           </div>
           <div className=" pb-8 mb-8">
-          <h4 className="font-semibold text-lg mt-10 text-[#666666]">7. Peer reviews (Dec 2020 onward)</h4>
-          <p className="quicksand mt-2">Another democratic process of ‘peer review’ to improve and strengthen the credibility of the project was introduced in Dec 2020.</p>
+          <h4 className="font-semibold text-lg mt-10 text-[#666666] min-[320px]:text-base  md:text-lg">7. Peer reviews (Dec 2020 onward)</h4>
+          <p className="quicksand mt-2 min-[320px]:text-xs  md:text-base">Another democratic process of ‘peer review’ to improve and strengthen the credibility of the project was introduced in Dec 2020.</p>
          
           </div>
 
